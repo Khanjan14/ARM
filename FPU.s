@@ -5,7 +5,7 @@
 __main  FUNCTION
 		mov r0,#0x3f800000
 		mov r1,#0x3f800000
-		mov r5,#0x3fc00000     ; Assigning value of x = .25
+		mov r5,#0x3fc00000     ; Assigning value of x = 1.5
 		mov r6,#0	  ; Count
 		vmov.f32 s0,r0
 		vmov.f32 s1,r1
