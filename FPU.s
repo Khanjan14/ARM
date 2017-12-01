@@ -13,7 +13,9 @@ __main  FUNCTION
 		vmov.f32 s5,r5
 		vmov.f32 s6,r6
 		
-loop	adds r6,r6,#1
+loop	vmov.f32 s8,r0
+		vadd.f32 s6,s6,s8
+		adds r6,r6,#1
 		vmul.f32 s1,s1,s5
 		vdiv.f32 s1,s1,s6
 		vadd.f32 s0,s0,s1
